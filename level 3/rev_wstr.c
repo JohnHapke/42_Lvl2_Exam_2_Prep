@@ -60,7 +60,7 @@ int	main(int argc, char **argv)
 
 	if (argc == 2)
 	{
-		i = ft_strlen(argv[1]);
+		i = ft_strlen(argv[1]) - 1;
 		while (i >= 0)
 		{
 			if (argv[1][i] != 32 && argv[1][i] != 9 && i != 0)
