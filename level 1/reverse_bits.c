@@ -30,12 +30,13 @@ unsigned char	reverse_bits(unsigned char octet)
 	int				i;
 	unsigned char	result;
 
-	i = 7;
+	i = 0;
 	result = 0;
-	while (i >= 0)
+	while (i <= 7)
 	{
-		result = (result << i) | (octet >> i) & 1;
-		i--;
+		result = (result << 1) | (octet & 1);
+		octet = octet >> 1;
+		i++;
 	}
 	return (result);
 }
