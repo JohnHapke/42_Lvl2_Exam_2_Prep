@@ -31,9 +31,6 @@ ft_list.h:
         struct s_list *next;
         void          *data;
     }                 t_list;
-
-Escriba una función que devuelva el número de elementos en la lista vinculada 
-que se pasó a ella.
 */
 
 #ifndef FT_LIST_H
