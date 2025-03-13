@@ -50,6 +50,8 @@ unsigned int	lcm(unsigned int a, unsigned int b)
 	while (1)
 	{
 		result = i * a;
+		if (result < a)
+			return (0);
 		if (result % b == 0)
 			break ;
 		i++;
